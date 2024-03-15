@@ -28,6 +28,7 @@ html {
 }
 
 body {
+  font-family: "Montserrat", sans-serif !important;
   font-style: normal;
 }
 
@@ -78,6 +79,156 @@ label {
 }
 
 .main_container {
-  max-width: 1380px;
+  max-width: 1200px;
   padding: 0 10px;
+  margin: 0 auto;
+}
+
+main {
+  background-image: url("../images/home_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  padding-top: 25px;
+}
+header .header_link a, header .language a {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+header .header_link {
+  gap: 23px;
+}
+header .language {
+  gap: 7px;
+}
+
+.home {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.about {
+  padding: 55px 0;
+}
+.about h6 {
+  font-size: 35px;
+  color: rgb(245, 125, 30);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.about .about_content {
+  gap: 15px;
+}
+.about p {
+  font-size: 15px;
+  color: rgb(52, 52, 52);
+  line-height: 1.2;
+}
+
+.block {
+  padding: 80px 0;
+  background-color: rgb(245, 125, 30);
+}
+.block .main_container {
+  gap: 20px;
+}
+.block h6 {
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.block p {
+  max-width: 1000px;
+  font-size: 30px;
+  color: white;
+  line-height: 1.2;
+}
+
+.team {
+  padding: 50px 0;
+}
+.team h6 {
+  font-size: 35px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.team p {
+  font-size: 15px;
+  color: rgb(52, 52, 52);
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.team .team_cards {
+  gap: 36px;
+}
+.team .team_card {
+  max-width: 300px;
+}
+.team .team_card .team_card_img {
+  position: relative;
+}
+.team .team_card .team_card_img .tema_card_img_text {
+  background: rgba(116, 116, 116, 0.4);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 12px;
+  width: 100%;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+.team .team_card .team_card_text {
+  padding: 12px;
+}
+.team .team_card h6 {
+  color: rgb(245, 125, 30);
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.team_under {
+  padding-bottom: 100px;
+}
+.team_under h6 {
+  font-size: 35px;
+  color: rgb(245, 125, 30);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.team_under p {
+  max-width: 600px;
+  font-size: 15px;
+  color: rgb(52, 52, 52);
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: rgb(245, 125, 30);
+  padding: 35px 0 45px 0;
+}
+footer ul {
+  gap: 10px;
+}
+footer ul address,
+footer ul a {
+  margin-bottom: 0;
+  font-size: 15px;
+  color: white;
+  line-height: 1.2;
 }/*# sourceMappingURL=style.css.map */

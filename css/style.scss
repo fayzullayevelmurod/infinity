@@ -60,7 +60,7 @@ html {
 }
 
 body {
-
+    font-family: "Montserrat", sans-serif !important;
     font-style: normal;
 }
 
@@ -84,6 +84,7 @@ address {
     overflow: hidden;
     position: relative;
 }
+
 .wrapper.home .main_container {
     max-width: 1440px;
     padding: 0 40px;
@@ -110,6 +111,192 @@ label {
 }
 
 .main_container {
-    max-width: 1380px;
+    max-width: 1200px;
     padding: 0 10px;
+    margin: 0 auto;
 }
+
+// main
+main {
+    background-image: url('../images/home_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+// main
+
+// header
+header {
+    padding-top: 25px;
+    .header_link, .language {
+        a {
+            font-size: 16px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+    }
+
+    .header_link {
+        gap: 23px;
+    }
+
+    .language {
+        gap: 7px;
+    }
+}
+// header
+
+// home
+.home {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+// home
+
+// about
+.about {
+    padding: 55px 0;
+    h6 {
+        font-size: 35px;
+        color: rgb(245, 125, 30);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .about_content {
+        gap: 15px;
+    }
+
+    p {
+        font-size: 15px;
+        color: rgb(52, 52, 52);
+        line-height: 1.2;
+    }
+}
+// about
+
+// block
+.block {
+    padding: 80px 0;
+    background-color: rgb(245, 125, 30);
+    .main_container {
+        gap: 20px;
+    }
+
+    h6 {
+        font-size: 35px;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+
+
+    p {
+        max-width: 1000px;
+        font-size: 30px;
+        color: white;
+        line-height: 1.2;
+    }
+}
+// block
+
+// team
+.team {
+    padding: 50px 0;
+
+    h6 {
+        font-size: 35px;
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2; 
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 15px;
+        color: rgb(52, 52, 52);
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+
+    .team_cards {
+        gap: 36px;
+    }
+
+    .team_card {
+        max-width: 300px;
+
+        .team_card_img {
+            position: relative;
+
+            .tema_card_img_text {
+                background: rgba(116, 116, 116, 0.4);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 12px;
+                width: 100%;
+                font-size: 15px;
+                color: rgb(255, 255, 255);
+                line-height: 1.2;
+            }
+        }
+
+        .team_card_text {
+            padding: 12px;
+        }
+
+        h6 {
+            color: rgb(245, 125, 30);
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+    }
+}
+// team
+
+// team_under
+.team_under {
+    padding-bottom: 100px;
+    h6 {
+        font-size: 35px;
+        color: rgb(245, 125, 30);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2; 
+        margin-bottom: 10px;
+    }
+
+    p {
+        max-width: 600px;
+        font-size: 15px;
+        color: rgb(52, 52, 52);
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+}
+// team_under
+
+// footer
+footer {
+    background-color: rgb(245, 125, 30);
+    padding: 35px 0 45px 0;
+
+    ul {
+        gap: 10px;
+
+        address,
+        a {
+            margin-bottom: 0;
+            font-size: 15px;
+            color: white;
+            line-height: 1.2;
+        }
+    }
+}
+// footer
