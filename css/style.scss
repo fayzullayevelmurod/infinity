@@ -257,9 +257,7 @@ header {
         right: 0;
         height: 100%;
         width: 173.5px;
-        // background: rgba(128, 128, 128, 0.322);
         overflow: hidden;
-        // border: 1px solid red;
     }
 
     .letter_line {
@@ -324,8 +322,8 @@ header {
 
     &.active {
         .letter_line {
-            $sec: 1.5s;
-            $sec-delay: 1.5s;
+            $sec: .8s;
+            $sec-delay: .3s;
 
             @keyframes letter1 {
                 from {
@@ -380,8 +378,8 @@ header {
                 &::after {
                     right: 0;
                     left: auto;
-                    animation: letter3 calc($sec - 1s) linear forwards;
-                    animation-delay: calc($sec-delay + .9s); 
+                    animation: letter3 calc($sec - .2s) linear forwards;
+                    animation-delay: calc($sec-delay + .1s); 
                 }
             }
 
@@ -400,8 +398,8 @@ header {
                 &::after {
                     bottom: 0;
                     top: auto;
-                    animation: letter4 calc($sec - .1s) linear forwards;
-                    animation-delay: calc($sec-delay + 1.3s); 
+                    animation: letter4 calc($sec - .2s) linear forwards;
+                    animation-delay: calc($sec-delay + .2s); 
                 }
             }
 
@@ -420,8 +418,8 @@ header {
                 &::after {
                     bottom: 0;
                     top: auto;
-                    animation: letter5 calc($sec - .1s) linear forwards;
-                    animation-delay: calc($sec-delay + 1.3s); 
+                    animation: letter5 calc($sec - .2s) linear forwards;
+                    animation-delay: calc($sec-delay + .2s); 
                 }
             }
 
@@ -438,8 +436,8 @@ header {
 
             &_6 {
                 &::after { 
-                    animation: letter6 calc($sec - .1s) linear forwards;
-                    animation-delay: calc($sec-delay + 2.6s); 
+                    animation: letter6 calc($sec - .2s) linear forwards;
+                    animation-delay: calc($sec-delay + .2s); 
                 }
             }
         }

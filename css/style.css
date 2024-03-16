@@ -274,8 +274,8 @@ header .language {
 .text_animation.active .letter_line_1::after {
   top: auto;
   bottom: 0;
-  animation: letter1 1.4s linear forwards;
-  animation-delay: 1.5s;
+  animation: letter1 0.7s linear forwards;
+  animation-delay: 0.3s;
 }
 @keyframes letter2 {
   from {
@@ -288,8 +288,8 @@ header .language {
   }
 }
 .text_animation.active .letter_line_2::after {
-  animation: letter2 1.4s linear forwards;
-  animation-delay: 1.5s;
+  animation: letter2 0.7s linear forwards;
+  animation-delay: 0.3s;
 }
 @keyframes letter3 {
   from {
@@ -304,8 +304,8 @@ header .language {
 .text_animation.active .letter_line_3::after {
   right: 0;
   left: auto;
-  animation: letter3 0.5s linear forwards;
-  animation-delay: 2.4s;
+  animation: letter3 0.6s linear forwards;
+  animation-delay: 0.4s;
 }
 @keyframes letter4 {
   from {
@@ -320,8 +320,8 @@ header .language {
 .text_animation.active .letter_line_4::after {
   bottom: 0;
   top: auto;
-  animation: letter4 1.4s linear forwards;
-  animation-delay: 2.8s;
+  animation: letter4 0.6s linear forwards;
+  animation-delay: 0.5s;
 }
 @keyframes letter5 {
   from {
@@ -336,8 +336,8 @@ header .language {
 .text_animation.active .letter_line_5::after {
   bottom: 0;
   top: auto;
-  animation: letter5 1.4s linear forwards;
-  animation-delay: 2.8s;
+  animation: letter5 0.6s linear forwards;
+  animation-delay: 0.5s;
 }
 @keyframes letter6 {
   from {
@@ -350,8 +350,8 @@ header .language {
   }
 }
 .text_animation.active .letter_line_6::after {
-  animation: letter6 1.4s linear forwards;
-  animation-delay: 4.1s;
+  animation: letter6 0.6s linear forwards;
+  animation-delay: 0.5s;
 }
 
 .about {
