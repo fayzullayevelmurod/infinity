@@ -1,3 +1,5 @@
+AOS.init();
+
 let burger = document.querySelector('.burger');
 let media_menu = document.querySelector('.media_menu');
 let media_menu_bg = document.querySelector('.media_menu_bg');
