@@ -305,6 +305,7 @@ header {
     }
 
     .team_cards {
+        align-items: start;
         gap: 36px;
     }
 
@@ -324,6 +325,19 @@ header {
                 font-size: 15px;
                 color: rgb(255, 255, 255);
                 line-height: 1.2;
+                cursor: pointer;
+                @include flex-center();
+                gap: 10px;
+                @include transition();
+                user-select: none;
+
+                svg {
+                    width: 15px;
+                }
+
+                &:hover {
+                    gap: 20px;
+                }
             }
         }
 
@@ -331,10 +345,22 @@ header {
             padding: 12px;
         }
 
+        .team_card_text.active {
+            p {
+                height: 140px;
+            }
+        }
+
         h6 {
             color: rgb(245, 125, 30);
             font-size: 25px;
             margin-bottom: 10px;
+        }
+
+        p {
+            height: 0;
+            overflow: hidden;
+            @include transition();
         }
     }
 }

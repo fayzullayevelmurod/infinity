@@ -242,6 +242,7 @@ header .language {
   margin-bottom: 30px;
 }
 .team .team_cards {
+  align-items: start;
   gap: 36px;
 }
 .team .team_card {
@@ -260,14 +261,36 @@ header .language {
   font-size: 15px;
   color: rgb(255, 255, 255);
   line-height: 1.2;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.2s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.team .team_card .team_card_img .tema_card_img_text svg {
+  width: 15px;
+}
+.team .team_card .team_card_img .tema_card_img_text:hover {
+  gap: 20px;
 }
 .team .team_card .team_card_text {
   padding: 12px;
+}
+.team .team_card .team_card_text.active p {
+  height: 140px;
 }
 .team .team_card h6 {
   color: rgb(245, 125, 30);
   font-size: 25px;
   margin-bottom: 10px;
+}
+.team .team_card p {
+  height: 0;
+  overflow: hidden;
+  transition: 0.2s ease;
 }
 
 .team_under {
