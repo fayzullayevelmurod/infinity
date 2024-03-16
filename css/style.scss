@@ -431,3 +431,13 @@ footer {
         }
     }
 }
+
+@media only screen and (max-width: 576px) {
+    h6 {
+        font-size: 25px !important;
+    }
+
+    p {
+        font-size: 15px !important;
+    }
+}

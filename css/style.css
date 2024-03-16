@@ -335,4 +335,12 @@ footer ul a {
   .team .team_card .team_card_img img {
     width: 100%;
   }
+}
+@media only screen and (max-width: 576px) {
+  h6 {
+    font-size: 25px !important;
+  }
+  p {
+    font-size: 15px !important;
+  }
 }/*# sourceMappingURL=style.css.map */
