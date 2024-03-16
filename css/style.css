@@ -152,6 +152,7 @@ main {
 }
 
 header {
+  z-index: 3;
   padding-top: 25px;
 }
 header .burger {
