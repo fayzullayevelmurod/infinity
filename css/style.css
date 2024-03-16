@@ -90,8 +90,79 @@ main {
   background-size: cover;
 }
 
+.close {
+  position: fixed;
+  top: 20px;
+  left: 290px;
+  z-index: 5;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+}
+.close span {
+  height: 2px;
+  width: 40px;
+  background-color: #fff;
+}
+.close .one {
+  transform: rotate(-45deg) translateY(4px);
+}
+.close .two {
+  transform: rotate(45deg) translateY(-5px);
+}
+
+.close.active {
+  display: flex;
+}
+
+.media_menu_bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  display: none;
+  z-index: 3;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.media_menu_bg.active {
+  display: block;
+}
+
+.media_menu {
+  z-index: 4;
+  position: fixed;
+  transition: 0.2s ease;
+  left: -100%;
+  height: 100%;
+  width: 280px;
+  background-color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.media_menu a {
+  font-size: 25px;
+}
+
+.media_menu.active {
+  left: 0;
+}
+
 header {
   padding-top: 25px;
+}
+header .burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+}
+header .burger span {
+  height: 2px;
+  width: 30px;
+  background-color: #fff;
 }
 header .header_link a, header .language a {
   font-size: 16px;
@@ -231,4 +302,37 @@ footer ul a {
   font-size: 15px;
   color: white;
   line-height: 1.2;
+}
+
+@media only screen and (max-width: 993px) {
+  .about .about_text {
+    margin-bottom: 30px;
+  }
+  .about .about_img img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main_container {
+    padding: 0 20px;
+  }
+  header .burger {
+    display: flex;
+  }
+  header .header_link {
+    display: none !important;
+  }
+  footer .main_container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .team .team_card {
+    max-width: 520px;
+  }
+  .team .team_card .team_card_img {
+    width: 100%;
+  }
+  .team .team_card .team_card_img img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
