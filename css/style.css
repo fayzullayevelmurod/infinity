@@ -183,6 +183,166 @@ header .language {
   background: rgba(0, 0, 0, 0.5);
 }
 
+.text_animation {
+  width: 188px;
+  height: 179px;
+  transform: translate(calc(100% - 0.2px), -0.2px);
+  position: relative;
+  overflow: hidden;
+}
+.text_animation_in {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 173.5px;
+  overflow: hidden;
+}
+.text_animation .letter_line {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  background: transparent;
+  border-radius: 1px;
+}
+.text_animation .letter_line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 2;
+  opacity: 0;
+}
+.text_animation .letter_line_1 {
+  height: 100%;
+  left: 0;
+}
+.text_animation .letter_line_2 {
+  height: 120%;
+  left: 32.5px;
+  top: -20px;
+  transform: rotateZ(-23.5deg);
+}
+.text_animation .letter_line_3 {
+  width: 50px;
+  height: 10px;
+  left: 0;
+  top: 112.5px;
+}
+.text_animation .letter_line_4 {
+  height: calc(100% + 29px);
+  left: 46.5px;
+  top: -20px;
+  transform: rotateZ(-23.5deg);
+}
+.text_animation .letter_line_5 {
+  height: calc(100% + 29px);
+  left: 127.5px;
+  top: -20px;
+  transform: rotateZ(23.5deg);
+}
+.text_animation .letter_line_6 {
+  height: 100%;
+  left: auto;
+  right: 0;
+  top: 0;
+}
+@keyframes letter1 {
+  from {
+    height: 0;
+    opacity: 1;
+  }
+  to {
+    height: 100%;
+    opacity: 1;
+  }
+}
+.text_animation.active .letter_line_1::after {
+  top: auto;
+  bottom: 0;
+  animation: letter1 1.4s linear forwards;
+  animation-delay: 3s;
+}
+@keyframes letter2 {
+  from {
+    height: 0;
+    opacity: 1;
+  }
+  to {
+    height: 100%;
+    opacity: 1;
+  }
+}
+.text_animation.active .letter_line_2::after {
+  animation: letter2 1.4s linear forwards;
+  animation-delay: 3s;
+}
+@keyframes letter3 {
+  from {
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+.text_animation.active .letter_line_3::after {
+  right: 0;
+  left: auto;
+  animation: letter3 0.5s linear forwards;
+  animation-delay: 3.9s;
+}
+@keyframes letter4 {
+  from {
+    height: 0;
+    opacity: 1;
+  }
+  to {
+    height: 100%;
+    opacity: 1;
+  }
+}
+.text_animation.active .letter_line_4::after {
+  bottom: 0;
+  top: auto;
+  animation: letter4 1.4s linear forwards;
+  animation-delay: 4.3s;
+}
+@keyframes letter5 {
+  from {
+    height: 0;
+    opacity: 1;
+  }
+  to {
+    height: 100%;
+    opacity: 1;
+  }
+}
+.text_animation.active .letter_line_5::after {
+  bottom: 0;
+  top: auto;
+  animation: letter5 1.4s linear forwards;
+  animation-delay: 4.3s;
+}
+@keyframes letter6 {
+  from {
+    height: 0;
+    opacity: 1;
+  }
+  to {
+    height: 100%;
+    opacity: 1;
+  }
+}
+.text_animation.active .letter_line_6::after {
+  animation: letter6 1.4s linear forwards;
+  animation-delay: 5.6s;
+}
+
 .about {
   padding: 55px 0;
 }
