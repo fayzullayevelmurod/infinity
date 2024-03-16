@@ -231,16 +231,24 @@ header {
 .home {
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
+
+    .home_text {
+        @include flex-center();
+        justify-content: center;
+        gap: 15px;
+        h1 {
+            font-size: 50px;
+            color: #fff;
+        }
+    }
 }
 
 .text_animation {
-    // border: 1px solid red;
     width: 188px;
     height: 179px;
-    transform: translate(calc(100% - 0.2px), -0.2px);
     position: relative;
+    left: 0;
     overflow: hidden;
-    // display: none;
 
     &_in {
         position: absolute;
@@ -267,7 +275,7 @@ header {
             left: 0;
             width: 100%;
             height: 100%;
-            background: white;
+            background: rgb(245, 125, 30);
             z-index: 2;
             opacity: 0;
         }
@@ -316,7 +324,7 @@ header {
     &.active {
         .letter_line {
             $sec: 1.5s;
-            $sec-delay: 3s;
+            $sec-delay: 1.5s;
 
             @keyframes letter1 {
                 from {
@@ -657,6 +665,19 @@ footer {
                 img {
                     width: 100%;
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .home {
+        .home_text {
+            flex-direction: column;
+            text-align: center;
+
+            h1 {
+                font-size: 40px;
             }
         }
     }
